@@ -1,0 +1,116 @@
+$White: #FFFFFF;
+$Black: #2D3436;
+$Graydark: #5C5C5C;
+$Gray: #858585;
+$GrayLight: #ADADAD;
+$GraySoft: #C2C2C2;
+$GradientBlack: linear-gradient (linear, left, from(#2D3436), to(#2E2D36));
+$Darkblue: #0984E3;
+$Lightblue: #74B9FF;
+$Darkgreen: #00B894;
+$Lightgreen: #55EFC4;
+$Darkyellow: #FDCB6E;
+$Lightyellow: #FFEAA7;
+$Darkred: #D63031;
+$Lighred: #FF7675;
+$Darkpurple: #6C5CE7;
+$Lightpurple: #A29BFE;
+$Darkpink: #E84393;
+$Lightpink: #FD79A8;
+
+
+.header {
+    position: absolute;
+    background-color: $White;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    width: 100%;
+    height: 96px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 2px 4px rgba(38, 50, 56, 0.16), 0px 4px 8px rgba(38, 50, 56, 0.08);
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    
+
+    &__list {
+        display: flex;
+        align-items: center;
+    }
+
+    &__link {
+        text-decoration: none;
+        font-family: 'Inter' sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 32px;
+        letter-spacing: 0.2px;
+        color: $Darkpurple;
+        transition: .2s linear;
+        
+        
+    }
+
+    &__link:hover {
+        color: $Darkpurple;
+        text-shadow: 3px 3px 15px $Black, -6px -2px 10px $Graydark;
+    }
+
+    &__dots {
+        width: 9px;
+        height: 9px;
+        border-radius: 50%;
+        background-color: $Darkyellow;
+        margin: 0 30px;
+    }
+
+    &__btn {
+        font-family: 'Inter' sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 36px;
+        background-color: $Darkpurple;
+        color: $White;
+        width: 170px;
+        height: 64px;
+        border-radius: 50px;
+        transition: all .1s linear;
+        border: none;
+        cursor: pointer;
+    }
+
+    &__btn:hover {
+        background-color: #fff;
+        color: $Darkpurple;
+        border: 3px solid #6C5CE7;
+    }
+    
+}
+
+@media(max-width: 950px) {
+    .header {
+        height: 80px;
+        &__link {
+            font-size: 14px;
+        }
+        &__btn {
+            font-size: 18px;
+            width: 150px;
+            height: 55px;
+        }
+        &__dots {
+            width: 6px;
+            height: 6px;
+            
+            margin: 0 20px;
+        }
+    }
+}

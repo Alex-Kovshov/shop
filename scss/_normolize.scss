@@ -1,0 +1,23 @@
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    
+}
+
+h1, h2, h3, h4  {
+    margin: 0;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    padding: 0 10px;
+    max-width: 1196px;
+    margin: 0 auto;
+}
